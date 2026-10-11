@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="660" viewBox="0 0 960 660" role="img" aria-labelledby="title desc">
+  <title id="title">OWY sampling policy and measured CPU cost</title>
+  <desc id="desc">EcoQoS background collection, staged sensor sampling and 15-minute journals. A 20.01-second closed-popup AC sample measured 1.25 percent of one logical core, slightly above the 1 percent target. Added electrical power is undetermined.</desc>
+  <rect width="960" height="660" rx="20" fill="#f5f7fb"/>
+  <g font-family="Segoe UI,Arial,sans-serif" fill="#17243b">
+    <text x="36" y="48" font-size="26" font-weight="600">OWY · collect only what is needed</text>
+    <text x="36" y="76" font-size="16" fill="#546379">EcoQoS background work · normal UI scheduling · no fixed core affinity</text>
+    <rect x="32" y="100" width="432" height="286" rx="14" fill="white" stroke="#dce3ee"/>
+    <rect x="484" y="100" width="444" height="286" rx="14" fill="white" stroke="#dce3ee"/>
+    <text x="52" y="132" font-size="18" font-weight="600">Sampling tiers</text>
+    <g font-size="15">
+      <g fill="#0067c0" font-weight="600"><text x="52" y="169">1 s</text><text x="52" y="207">2 s</text><text x="52" y="245">5 s</text><text x="52" y="283">60 s</text></g>
+      <text x="117" y="169">Codex + network</text><text x="117" y="207">CPU + RAM</text>
+      <text x="117" y="245">Needed GPU / expanded fans + battery</text>
+      <text x="117" y="283">Expanded NVMe details</text>
+      <text x="52" y="326" fill="#546379">Battery Saver slows detailed sensors.</text>
+      <text x="52" y="350" fill="#546379">Inactive NVIDIA is not queried.</text>
+    </g>
+    <text x="504" y="132" font-size="18" font-weight="600">Bounded memory, sparse disk writes</text>
+    <rect x="504" y="151" width="404" height="58" rx="8" fill="#edf5fc"/>
+    <text x="522" y="177" font-size="16" font-weight="600">10 minutes of fine samples in RAM</text>
+    <text x="522" y="197" font-size="13" fill="#546379">Account every receipt before coalescing the display</text>
+    <path d="M706 216v18m-6-6 6 6 6-6" fill="none" stroke="#60758e" stroke-width="2"/>
+    <rect x="504" y="243" width="404" height="66" rx="8" fill="#edf8f4"/>
+    <text x="522" y="269" font-size="16" font-weight="600">Numeric minute journals · 28 days</text>
+    <text x="522" y="291" font-size="13" fill="#546379">Flush every 15 minutes + clean quit · no database</text>
+    <text x="504" y="350" font-size="15" fill="#546379">Extra device handles close when hidden or locked.</text>
+    <rect x="32" y="406" width="896" height="218" rx="14" fill="white" stroke="#dce3ee"/>
+    <text x="52" y="439" font-size="18" font-weight="600">Measured CPU cost · short settled sample on Blade 14 (2025)</text>
+    <text x="52" y="465" font-size="14" fill="#546379">20.01 s · popup closed · AC · UI + token worker · 152.3 MiB combined working set</text>
+    <rect x="52" y="488" width="650" height="28" rx="3" fill="#edf0f5"/>
+    <rect x="52" y="488" width="304.51" height="28" fill="#0067c0"/>
+    <rect x="356.51" y="488" width="236.84" height="28" fill="#8264b5"/>
+    <path d="M485.33 478v48" stroke="#536273" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="725" y="509" font-size="25" font-weight="600">1.25%</text>
+    <text x="52" y="539" font-size="13" fill="#546379">0</text><text x="450" y="539" font-size="13" fill="#546379">1% target</text><text x="671" y="539" font-size="13" fill="#546379">1.5%</text>
+    <rect x="52" y="554" width="12" height="12" fill="#0067c0"/><text x="74" y="565" font-size="14">UI 0.70%</text>
+    <rect x="202" y="554" width="12" height="12" fill="#8264b5"/><text x="224" y="565" font-size="14">Worker 0.55%</text>
+    <text x="418" y="565" font-size="14" fill="#546379">Percent of one logical core; target slightly exceeded</text>
+    <text x="52" y="599" font-size="14" font-weight="600">CPU cost is not electrical power. Added watts and battery-life change remain undetermined.</text>
+    <text x="36" y="647" font-size="12" fill="#637187">Source: docs/efficiency-measurement.json · approximately 0.062% of total 20-thread CPU capacity</text>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+* text=auto
+*.png binary
+*.ico binary
+# Preserve upstream notices and the hashes recorded for imported source.
+licenses/** -text
+worker/tokenscope/** -text

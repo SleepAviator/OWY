@@ -1,0 +1,57 @@
+{
+  "repository": "https://github.com/SleepAviator/tokenscope",
+  "revision": "2672dd48e38cd92f99a65bd52b3693455eb815af",
+  "local_patches_in_source": [
+    "live_meter.py",
+    "test_live_meter.py",
+    "live_probe.py",
+    "live_telemetry.py",
+    "test_live_probe.py"
+  ],
+  "sha256": {
+    "live_probe.py": "e9b58afc8949b8252220dfbddee26d8294eb0482ca5f94bfd8aef297ab26fb9d",
+    "live_meter.py": "fcb4dd7b3b4bb17aa9bb0c605eedc204863b333b32eedae9f6432ae2dd876442",
+    "live_telemetry.py": "83027eb67a5286bb00cb9054b326a9878ff88fb7d6092b351e64cb011b9614f3",
+    "test_live_probe.py": "d60d91599d166c1eaac1d5b4dac2cb38300f0f7e082f7f365507c9fe839052c6",
+    "test_live_meter.py": "5af9b3c5b2ec84ea60e664b4c4ed49a9c6ea37fa438ded97518408af09dbd2ed",
+    "test_live_telemetry.py": "5dc12864a00aebdbb1a02c3dd8215c172e38844954e3da8cb24aac024389d546",
+    "test_probe_telemetry.py": "56acd3e1b6d0d447a9b15216845257d141f6fd06dde2e25225701df52af9ba7d",
+    "LICENSE": "a45de9bae8c8e71c72d37f900648f8f4e32a43222b9511dc62823280987096c8"
+  },
+  "windows_efficiency": {
+    "date": "2026-10-10",
+    "previous_live_probe_sha256": "a494775de344448d51d2e2f92286f318eae40b0c0b02062e471ad29120163f94",
+    "changes": [
+      "Optional Codex activity metadata checks every five seconds with bounded next-tick catchup",
+      "Keep source SQLite connections short-lived for Windows database rotation",
+      "One-second HTTP idle wait; incoming telemetry still wakes immediately",
+      "Native token tails, receipt accounting and display keep their one-second cadence"
+    ]
+  },
+  "receipt_counter_sync": {
+    "date": "2026-10-09",
+    "source_revision": "03d3af0fb7e6577a206464e5e770f71a2927f7a2",
+    "source_files_sha256": {
+      "live_meter.py": "d725cfc717438cd2b1ad3793e90a3a62584fc7ba882677c2435cbae58dcd1da0",
+      "test_live_meter.py": "f701151641092a554fccf169bcef1ae298e0a489b0ae160616b9d667c11e6ef1"
+    },
+    "changes": [
+      "Exact receipt timestamps and trailing 300-second expiry",
+      "Observed receipt idle zeros",
+      "Completed receipt history corrections and regression tests"
+    ],
+    "retained_windows_adaptations": [
+      "Independent untimed receipt projection",
+      "Codex-only profile",
+      "Bounded IPC and 10-minute RAM retention"
+    ]
+  },
+  "public_release_verification": {
+    "date": "2026-10-10",
+    "note": "Corrected stale recorded hashes for the existing Windows-adapted collector and tests. Source content is unchanged by release preparation and matches the private OWY import. Earlier upstream and adaptation records are retained above.",
+    "previous_recorded_sha256": {
+      "live_meter.py": "95519c49b80e38c1939a01f4788daabbad5cec1699707c818ee897473d2492a2",
+      "test_live_meter.py": "73418717373959e123699b5709e9734552cba2cf40b5f6075615c7c077c70828"
+    }
+  }
+}

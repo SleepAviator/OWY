@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "measured_on": "2026-10-10",
+  "hardware": "Razer Blade 14 (2025), Ryzen AI 9 365, 20 logical processors",
+  "build": "direct-sensors",
+  "method": "Settled process CPU-time deltas and working sets, popup closed, unlocked desktop, AC power",
+  "duration_seconds": 20.0117976,
+  "ui_one_logical_core_percent": 0.7027104851390262,
+  "worker_one_logical_core_percent": 0.546552599552576,
+  "combined_one_logical_core_percent": 1.2492630846916022,
+  "combined_total_cpu_capacity_percent": 0.06246315423458011,
+  "combined_working_set_bytes": 159674368,
+  "single_logical_core_target_percent": 1.0,
+  "target_met_in_this_sample": false,
+  "added_electrical_watts": null,
+  "battery_life_change_percent": null,
+  "limitations": [
+    "Short resource sample, not an electrical-power measurement",
+    "Not a matched previous-build comparison",
+    "Does not establish physical GPU sleep or battery-life savings"
+  ]
+}

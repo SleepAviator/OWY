@@ -1,0 +1,15 @@
+Copyright (c) 2026 Crear12, for copyrightable OWY contributions.
+
+OWY-specific code and documentation: GNU Affero General Public License,
+version 3 only (AGPL-3.0-only), with the additional permission in
+LICENSE-EXCEPTION. A separately executed commercial licence may be negotiated
+with the rights holder. See LICENSING.md.
+
+Imported TokenScope files in worker/tokenscope retain their MIT licence,
+copyright notices and provenance. Other dependencies retain their own terms;
+see THIRD_PARTY_NOTICES.md and licenses/.
+
+The pixel owl was generated with AI from an independently generated owl
+reference. No claim of exclusive copyright in solely AI-generated pixels is
+made. To the extent the rights holder has rights in the supplied artwork,
+those rights are granted under the same project licence and exception.

@@ -1,0 +1,26 @@
+OWY Windows runtime linking permission
+
+As an additional permission under section 7 of the GNU Affero General Public
+License version 3, the copyright holders of OWY who grant this permission
+permit you to link or combine their covered OWY code with the following
+dependencies, and convey the resulting work:
+
+1. Unmodified Microsoft Windows App SDK / WinUI 3 runtime components and
+   Microsoft .NET runtime components supplied for Windows.
+2. Unmodified Python runtime components supplied under their own licences.
+3. AMD and NVIDIA display-driver libraries installed separately on a user's
+   system, used through their driver interfaces.
+
+You must comply with each dependency's own licence. This permission does not
+grant any right to redistribute a GPU driver or other vendor software that
+its copyright holder has not granted. Dependency notices must be retained.
+
+The Corresponding Source requirements of the AGPL continue to apply to OWY
+and other covered code in the resulting work. They do not require disclosing
+the source of the dependencies listed above solely because they are linked
+or combined with OWY. This permission does not exempt OWY modifications,
+integrations, or an otherwise covered proprietary application from copyleft.
+
+You may remove this additional permission from a copy, as permitted by the
+AGPL. A modified copy must not imply that a contributor grants this permission
+unless that contributor has done so. No separate trademark rights are granted.

@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../../src/OWY.Core/OWY.Core.csproj"/><ProjectReference Include="../../src/OWY.Hardware/OWY.Hardware.csproj"/></ItemGroup>
+</Project>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><UseWinUI>true</UseWinUI><WindowsPackageType>None</WindowsPackageType>
+    <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained><RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained><ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>OWY</AssemblyName><RootNamespace>OWY.App</RootNamespace>
+    <ApplicationIcon>../../assets/OWY.ico</ApplicationIcon><Product>OWY (Owl's Watching You)</Product>
+    <AppxPackage>false</AppxPackage><AppxGeneratePriEnabled>true</AppxGeneratePriEnabled>
+  </PropertyGroup>
+  <ItemGroup><PackageReference Include="Microsoft.WindowsAppSDK" Version="2.5.1" /></ItemGroup>
+  <ItemGroup><PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.6584" PrivateAssets="all" /></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../OWY.Core/OWY.Core.csproj" />
+    <ProjectReference Include="../OWY.Hardware/OWY.Hardware.csproj" />
+    <ProjectReference Include="../OWY.Taskbar/OWY.Taskbar.csproj" />
+  </ItemGroup>
+  <Target Name="PublishOWYResources" AfterTargets="Publish">
+    <ItemGroup><OWYXbf Include="$(TargetDir)**\*.xbf" /></ItemGroup>
+    <Copy SourceFiles="$(TargetDir)$(AssemblyName).pri" DestinationFolder="$(PublishDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(OWYXbf)" DestinationFiles="@(OWYXbf->'$(PublishDir)%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+</Project>
